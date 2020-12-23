@@ -7,21 +7,9 @@ import { GraphQLClientModule } from '@app/modules/graphql-client';
 import { AppRoutingModule } from './app.routing-module';
 import { AppComponent } from './app.component';
 
-import { LayoutModule } from '../layout';
-import { HealthModule } from '../health';
-import { ExampleModule } from '../example';
-
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    GraphQLClientModule,
-    AppRoutingModule,
-    LayoutModule,
-    HealthModule,
-    ExampleModule,
-  ],
+  imports: [BrowserModule, BrowserAnimationsModule, GraphQLClientModule, AppRoutingModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
