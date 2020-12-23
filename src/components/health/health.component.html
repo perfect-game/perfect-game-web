@@ -1,0 +1,4 @@
+<div>Health Component</div>
+<div>API Health: {{ healthInformation?.health || 'Loading...' }}</div>
+<div>DatabaseHealth: {{ healthInformation?.databaseHealth || 'Loading...' }}</div>
+<div><button (click)="refreshHealthInformation()">Referesh</button></div>

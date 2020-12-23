@@ -14,12 +14,21 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
     "target": "es2015",
     "module": "es2020",
     "lib": [
       "es2018",
-      "dom"
-    ]
+      "dom",
+      "esnext.asynciterable"
+    ],
+    "paths": {
+      "@app/environment": ["src/environments/environment.ts"],
+      "@app/components": ["src/components"],
+      "@app/components/*": ["src/components/*"],
+      "@app/modules": ["src/modules"],
+      "@app/modules/*": ["src/modules/*"]
+    }
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
