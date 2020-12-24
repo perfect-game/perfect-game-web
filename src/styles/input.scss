@@ -1,0 +1,13 @@
+.input {
+  @apply border;
+  @apply rounded-lg;
+  @apply font-light;
+  @apply text-sm;
+  @apply outline-none;
+  @apply transition;
+  @apply duration-100;
+
+  &:focus {
+    @apply border-purple-500;
+  }
+}

@@ -1,7 +1,13 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
 })
-export class SignInComponent {}
+export class SignInComponent {
+  constructor(private readonly router: Router) {}
+
+  public signIn(): void {
+    this.router.navigate(['/app']);
+  }
+}

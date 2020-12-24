@@ -2,8 +2,8 @@ const webpackMerge = require('webpack-merge');
 
 module.exports = (config) => {
   const merge = webpackMerge && webpackMerge.merge ? webpackMerge.merge : webpackMerge;
-  const isProd = config.mode === "production";
-  const tailwindConfig = require("./tailwind.config.js")(isProd);
+  const isProd = config.mode === 'production';
+  const tailwindConfig = require('./tailwind.config.js')(isProd);
 
   return merge(config, {
     module: {
@@ -15,15 +15,11 @@ module.exports = (config) => {
             postcssOptions: {
               ident: 'postcss',
               syntax: 'postcss-scss',
-              plugins: [
-                require('postcss-import'),
-                require('tailwindcss')(tailwindConfig),
-                require('autoprefixer'),
-              ]
-            }
-          }
-        }
-      ]
-    }
+              plugins: [require('postcss-import'), require('tailwindcss')(tailwindConfig), require('autoprefixer')],
+            },
+          },
+        },
+      ],
+    },
   });
 };
