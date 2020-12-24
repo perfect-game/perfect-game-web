@@ -8,8 +8,8 @@ const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: 'health', loadChildren: (): any => import('@app/components/health').then((m) => m.HealthModule) },
-      { path: 'example', loadChildren: (): any => import('@app/components/example').then((m) => m.ExampleModule) },
+      { path: 'health', loadChildren: (): any => import('@app/views/health').then((m) => m.HealthModule) },
+      { path: 'example', loadChildren: (): any => import('@app/views/example').then((m) => m.ExampleModule) },
     ],
   },
 ];
