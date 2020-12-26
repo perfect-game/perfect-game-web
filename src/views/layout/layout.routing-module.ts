@@ -4,10 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout.component';
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'profile' },
   {
     path: '',
     component: LayoutComponent,
-    children: [],
+    children: [{ path: 'profile', loadChildren: (): any => import('@app/views/profile').then((m) => m.ProfileModule) }],
   },
 ];
 

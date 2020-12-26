@@ -4,10 +4,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@import './styles/card.scss';
-@import './styles/input.scss';
-@import './styles/button.scss';
-
 html,
 body {
   height: 100%;
@@ -15,4 +11,8 @@ body {
 body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+::selection {
+  @apply bg-purple-100;
 }

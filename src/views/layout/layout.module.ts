@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { GraphQLClientModule } from '@app/modules/graphql-client';
 
 import { LayoutRoutingModule } from './layout.routing-module';
-import { LayoutComponent } from './layout.component';
 import { LayoutService } from './layout.service';
+import { LayoutComponent } from './layout.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 @NgModule({
-  declarations: [LayoutComponent],
+  declarations: [LayoutComponent, SideBarComponent],
   providers: [LayoutService],
-  imports: [GraphQLClientModule, LayoutRoutingModule],
+  imports: [CommonModule, GraphQLClientModule, LayoutRoutingModule],
 })
 export class LayoutModule {}
