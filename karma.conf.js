@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/angular-project-template'),
+      dir: require('path').join(__dirname, './coverage/perfect-game-web'),
       subdir: '.',
       reporters: [
         { type: 'html' },
