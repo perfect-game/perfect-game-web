@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "~11.0.4",
     "@angular/router": "~11.0.4",
     "@apollo/client": "^3.3.6",
+    "@perfect-game/score-calculator": "^1.0.0",
     "apollo-angular": "^2.1.0",
     "graphql": "^15.4.0",
     "rxjs": "~6.6.3",
